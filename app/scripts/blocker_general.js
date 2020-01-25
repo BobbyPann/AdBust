@@ -1,4 +1,5 @@
 
+import readFileSync from 'fs';
 
 /**
  * Overlay HTML for big teasers and articles
@@ -17,7 +18,6 @@ const overlayHTML = `
         </div>
     </div>
 `;
-
 
 
 /* oben Bilder einfügen &  an Größe des geblockten Contents anpassen?*/
@@ -57,8 +57,6 @@ const overlayNode = parseHtml(overlayHTML);
  */
 const overlaySmallNode = parseHtml(overlayHTMLSmall);
 
-// const fs = require('fs');
-// import readFileSync from 'fs';
 
 /**
  * The blocker class searches for an xpath expression and blocks content on basis of css selectors
@@ -76,7 +74,7 @@ export class Blocker {
             this.xpathExpression = xpathExpression;
         } else {
             const text = readFileSync("https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_adservers.txt", "utf-8");
-            this.xpathExpression = ".//*[contains(text(), const readline = require('readline');"
+            this.xpathExpression = ".//*[For (const row of textByLine) contains(.//$(row))"
           
         }
     }

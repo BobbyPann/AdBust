@@ -1,4 +1,4 @@
-console.log("#### AfD CONTENT-BLOCKER ####");
+console.log("#### AD CONTENT-BLOCKER ####");
 
 import { Blocker } from "./blocker_general";
 
@@ -35,11 +35,17 @@ blocker.watchPageForMutations();
 /**
  * BILD.de uses teaser images (sometimes without alt attributes). So we try to find teasers by its article URI
  */
-console.log("#### AfD CONTENT-BLOCKER FOR URL PARTS ####");
+console.log("#### AD CONTENT-BLOCKER FOR URL PARTS ####");
 [
-    "//a[contains(@href,'-afd-')]",
-    "//a[contains(@href,'/afd-')]",
-    "//a[contains(@href,'-afd.')]"
+    "//a[contains(@href,'-ad-')]",
+    "//a[contains(@href,'/ad-')]",
+    "//a[contains(@href,'-ad.')]"
+
+
+    /* Hier die EasyList verlinken. */
+
+
+
 ].forEach(function(xpathExpression) {
     let teaserLinkBlocker = new Blocker([ 
         {

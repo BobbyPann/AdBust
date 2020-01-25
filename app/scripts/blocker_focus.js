@@ -1,4 +1,4 @@
-console.log("#### AfD CONTENT-BLOCKER ####");
+console.log("#### AD CONTENT-BUSTER ####");
 
 import { Blocker } from "./blocker_general";
 
